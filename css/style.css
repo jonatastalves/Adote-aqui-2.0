@@ -4,21 +4,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #222831;
+  
 }
 
 body {
 	margin: 0;
+	background-color: #222831;
 }
-
-.container {
-	max-width: 1920px;
-	width: 100%;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 
 /* Header e navbar */
 header {
@@ -30,6 +22,7 @@ header {
     justify-content: flex-end;
     align-items: center;
     margin: 0.5rem 1.5rem;
+	
 }
 a,
 button {
@@ -39,11 +32,18 @@ button {
   margin-right: auto;
   margin-left: 20px;
 }
+
 .logo {
   height: 3.2rem;
   margin-right: auto;
   margin-top: 5px;
 }
+
+.logo:hover {
+	height: 3.6rem;
+	margin-right: auto;
+	margin-top: 5px;
+  }
 
 nav {
 	position: fixed;
@@ -56,6 +56,7 @@ nav {
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
+	background-color: #222831;
 
 }
 
@@ -87,18 +88,31 @@ button {
   margin-left: 20px;
 }
 button:hover {
-  background: rgba(0, 173, 181, 0.8);
+  background: rgba(2, 126, 133, 0.8);
 }
 
 /* main banner */
 
+.container {
+	
+	
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
 #main-banner {
-	background: url('../img/banner6.jpg') no-repeat;
+	background: url('../img/fundomainbanner.jpg') no-repeat;
 	background-size: cover;
 	background-position: 0 55%;
 	position: relative;
 	margin-top: 100px;
+	
+
+	
 }
+
+/* FORMULÁRIO DE PESQUISA */
 
 #search-form {
 	position: relative;
@@ -111,14 +125,16 @@ button:hover {
 }
 
 #search-form h1 {
-	font-size: 40px;
+	font-size: 30px;
+	font-family: "Montserrat", sans-serif;
 }
 
 #search-form p {
 	margin-top: 30px;
 	margin-bottom: 60px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 300;
+	font-family: "Montserrat", sans-serif;
 }
 
 #search-form input, #search-form select, #sendjobs input, #sendjobs select, #sendjobs textarea {
@@ -131,7 +147,7 @@ button:hover {
 }
 
 #search-form input[type=submit], #sendjobs input[type=submit] {
-	background-color: #3381f3;
+	background-color: #04bd70;
 	text-transform: uppercase;
 	color: #FFF;
 	cursor: pointer;
@@ -139,6 +155,155 @@ button:hover {
 }
 
 #search-form input[type=submit]:hover, #sendjobs input[type=submit]:hover {
-	background-color: #2B79EB;
+	background-color: rgba(2, 126, 133, 0.8);
 }
 
+/* TESTEMUNHO CONTAINER  */
+
+#testmony-container {
+	
+	padding: 6em 0;
+}
+
+#testmony-container h2, #testmony-container p {
+	color: #FFF;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+}
+
+#testmony-container h2 {
+	font-size: 36px;
+	margin-bottom: 50px;
+}
+
+#testmony-container p {
+	margin-bottom: 50px;
+}
+
+.testmony-box {
+	display: inline-block;
+	width: 24.5%;
+	text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg {
+	background-color: #FFF;
+	color: #666;
+	border-radius: 10px;
+	padding: 20px;
+	width: 50%;
+	position: relative;
+	margin: 35px auto;
+	font-style: italic;
+	
+}
+
+.testmony-msg:after {
+	content: "";
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #FFF;
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testmony-box img {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #CCC;
+	border-radius: 20%;
+}
+
+
+/* CATALOGO */
+
+#blog-container {
+	text-align: center;
+	padding: 5em 0;
+	background-color: white;
+	font-family: "Montserrat", sans-serif;
+	
+}
+
+#blog-container .p-center {
+	margin-bottom: 60px;
+}
+
+
+.animal-box {
+	display: inline-block;
+	width: 24%;
+	padding: 2% 2%;
+	text-align: left;
+	
+
+	
+}
+
+.animal-box:hover {
+	background-color: rgb(240, 240, 240);
+	cursor: pointer;
+	border-radius: 4%;
+	box-shadow: 3px 3px rgb(97, 97, 97);
+}
+
+.animal-box img {
+	width: 100%;
+	height: 290px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.animal-box h4 {
+	font-size: 24px;
+	margin-bottom: 15px;
+	
+}
+
+.animal-box h4 a {
+	text-decoration: none;
+	color: #666;
+}
+
+.catalogo-desc {
+	font-size: 12px;
+	margin-bottom: 15px;
+	
+}
+
+.catalogo-resumo {
+	font-size: 14px;
+	margin-bottom: 30px;
+	
+}
+
+.light-btn {
+	
+	background-color: #04bd70;
+	color: #FFF;
+	
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.light-btn:hover {
+	background-color: rgba(2, 126, 133, 0.8);
+	
+}
+
+.wrapper {
+	max-width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
