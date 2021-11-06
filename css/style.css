@@ -380,3 +380,79 @@ footer{
     opacity: .4;
     font-weight: 200;
 }
+
+/* responsividade */
+
+
+
+@media screen and (max-width: 576px) {
+
+	html, body {
+	  overflow-x:hidden 
+	} 
+
+	nav {
+		height: 4em;
+	}
+
+	#logo {
+		left: 2em;
+		height: 2em;
+		width: 2em;
+		margin-top: 1em;
+	}
+
+	#main-banner {
+		margin-top: 2em;
+	}
+
+	#search-form {
+		padding-top: 15em;
+		padding-bottom: 5em;
+		width: 90%;
+	}
+
+	#search-form h1 {
+		font-size: 1.6em;
+	}
+
+	#search-form p {
+		font-size: 1em;
+		margin-bottom: 2em;
+	}
+
+	#search-form form {
+		width: 80%;
+	}
+
+	#search-form input[type=submit] {
+		margin-bottom: 0;
+	}
+
+	#testmony-container {
+		padding: 5em 0;
+	}
+
+	.testmony-box {
+		width: 100%;
+	}
+
+	#testmony-container p {
+		margin-bottom: 1em;
+	}
+
+	.footer-box {
+		display: block;
+		width: 100%;
+	}
+
+	.animal-box {
+		display: block;
+		width: 80%;
+		padding: 0;
+		margin-bottom: 3em;
+		margin-left: 3em;
+	}
+
+
+}
