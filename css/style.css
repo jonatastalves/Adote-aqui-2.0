@@ -449,7 +449,7 @@ footer{
 
 	
 	nav {
-		height: 8em;
+		height: 5em;
 	}
 
 	.nav-links{
@@ -460,6 +460,7 @@ footer{
 	#bt_menu{
 
 		display: none;
+		
 	}	
 
 	label[for="bt_menu"]{
@@ -474,6 +475,8 @@ footer{
 		cursor: pointer;
 		width: 50px;
 		height: 50px;
+		position: fixed;
+		right: 85%;
 			
 	}
 
@@ -494,6 +497,9 @@ footer{
 
 	.logo {
 		
+		position: fixed;
+		right: 40%;
+		bottom: 94%;
 		height: 2.0rem;
 		
 	}
