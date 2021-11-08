@@ -28,6 +28,17 @@ a,
 button {
   color: white;
 }
+
+#bt_menu{
+
+	display: none;
+}
+
+label[for="bt_menu"] {
+
+	display: none;
+}
+
 .image-clickable {
   margin-right: auto;
   margin-left: 20px;
@@ -40,7 +51,7 @@ button {
 }
 
 .logo:hover {
-	height: 3.6rem;
+	height: 3.4rem;
 	margin-right: auto;
 	margin-top: 5px;
   }
@@ -383,23 +394,110 @@ footer{
 
 /* responsividade */
 
-
-
-@media screen and (max-width: 576px) {
-
-	html, body {
-	  overflow-x:hidden 
-	} 
-
-	nav {
-		height: 4em;
+@media screen and (max-width: 1024px) {
+	#logo {
+		position: absolute;
+		left: 50px;
 	}
 
+	.nav-container ul {
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+
+	.nav-container ul li {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		float: none;
+		display: inline-block;
+		margin: 0 10px;
+	}
+
+	#search-form {
+		padding-top: 10em;
+		padding-bottom: 5em;
+	}
+
+	#search-form form {
+		width: 60%;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#search-form form input, #search-form select {
+		display: block;
+		margin: 0;
+		margin-bottom: 25px;
+		width: 100%;
+		border-width: 0;
+		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+
+
+
+	#search-form input[type=submit] {
+		margin-bottom: 0;
+	}
+
+}
+
+@media screen and (max-width: 805px) {
+
+	
+	nav {
+		height: 8em;
+	}
+
+	.nav-links{
+
+		display:none;
+	}
+
+	#bt_menu{
+
+		display: none;
+	}	
+
+	label[for="bt_menu"]{
+
+		display: block;
+		padding: 5px;
+		background-color: #222831;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		font-size: 30px;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+			
+	}
+
+	#bt_menu:checked ~ .nav-links{
+
+		display: list-item;
+
+	}
+
+	#bt_menu:checked ~ .image-clickable{
+
+		display: none;
+	}
+
+	
+
 	#logo {
+		
 		left: 2em;
 		height: 2em;
 		width: 2em;
-		margin-top: 1em;
+		margin-top: 6em;
+		padding-left: 40px;
+		
 	}
 
 	#main-banner {
@@ -407,7 +505,7 @@ footer{
 	}
 
 	#search-form {
-		padding-top: 15em;
+		padding-top: 8em;
 		padding-bottom: 5em;
 		width: 90%;
 	}
@@ -456,3 +554,4 @@ footer{
 
 
 }
+
