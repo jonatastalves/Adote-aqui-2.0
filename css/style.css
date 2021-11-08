@@ -450,7 +450,8 @@ footer{
 	
 	nav {
 		height: 5em;
-	}
+		display: flex;
+}
 
 	.nav-links{
 
@@ -495,13 +496,130 @@ footer{
 
 	
 
-	.logo {
+	.image-clickable {
 		
-		position: fixed;
-		right: 40%;
-		bottom: 94%;
+		position: relative;
+		left: 20%;
+		
+	}
+
+	.logo{
 		height: 2.0rem;
+	}
+
+	#main-banner {
+		margin-top: 2em;
+	}
+
+	#search-form {
+		padding-top: 8em;
+		padding-bottom: 5em;
+		width: 90%;
+	}
+
+	#search-form h1 {
+		font-size: 1.6em;
+	}
+
+	#search-form p {
+		font-size: 1em;
+		margin-bottom: 2em;
+	}
+
+	#search-form form {
+		width: 80%;
+	}
+
+	#search-form input[type=submit] {
+		margin-bottom: 0;
+	}
+
+	#testmony-container {
+		padding: 5em 0;
+	}
+
+	.testmony-box {
+		width: 100%;
+	}
+
+	#testmony-container p {
+		margin-bottom: 1em;
+	}
+
+	.footer-box {
+		display: block;
+		width: 100%;
+	}
+
+	.animal-box {
+		display: block;
+		width: 80%;
+		padding: 0;
+		margin-bottom: 3em;
+		margin-left: 3em;
+	}
+
+
+}
+
+@media screen and (max-width: 420px) {
+
+	
+	nav {
+		height: 5em;
+		display: flex;
+}
+
+	.nav-links{
+
+		display:none;
+	}
+
+	#bt_menu{
+
+		display: none;
 		
+	}	
+
+	label[for="bt_menu"]{
+
+		display: block;
+		padding: 5px;
+		background-color: #222831;
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: center;
+		font-size: 30px;
+		cursor: pointer;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		right: 85%;
+			
+	}
+
+	#bt_menu:checked ~ .nav-links{
+
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	#bt_menu:checked ~ .image-clickable{
+
+		display: none;
+	}
+
+	.image-clickable {
+		
+		position: relative;
+		left: 8%;
+		
+	}
+
+	.logo{
+		height: 2.0rem;
 	}
 
 	#main-banner {
