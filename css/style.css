@@ -479,7 +479,9 @@ footer{
 
 	#bt_menu:checked ~ .nav-links{
 
-		display: list-item;
+		display: flex;
+		flex-direction: column;
+
 
 	}
 
@@ -490,13 +492,9 @@ footer{
 
 	
 
-	#logo {
+	.logo {
 		
-		left: 2em;
-		height: 2em;
-		width: 2em;
-		margin-top: 6em;
-		padding-left: 40px;
+		height: 2.0rem;
 		
 	}
 
